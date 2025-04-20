@@ -1,0 +1,12 @@
+[
+   {
+      "directory" : "C:/Users/aboba/Desktop/main_project/Debug",
+      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/main_project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "C:/Users/aboba/Desktop/main_project/main.c"
+   },
+   {
+      "directory" : "C:/Users/aboba/Desktop/main_project/Debug",
+      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/main_project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "C:/Users/aboba/Desktop/main_project/tm4c123gh6pm_startup_ccs.c"
+   }
+]
