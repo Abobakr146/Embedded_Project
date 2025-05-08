@@ -103,8 +103,7 @@ void LCD_displayString(const uint8 *data){
         index++;
     }
 }
-// (Existing code for LCD_init, LCD_command, LCD_clearScreen,
-//  LCD_displayCharacter, LCD_displayString should be above this)
+
 
 /*************
 => Go to specific row and column on LCD screen
