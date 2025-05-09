@@ -102,3 +102,41 @@ void LCD_displayString(const uint8 *data){
         index++;
     }
 }
+
+
+/*************
+=> Go to specific row and column on LCD screen
+=> arguments: row (0 or 1 for a 2-line LCD), column (0 to 15 for a 16x2 LCD)
+=> void return
+*************/
+
+
+void LCD_goToRowColumn(uint8 row, uint8 column) {
+    uint8 address;
+
+   
+    if (column > 15) { // Prevent writing past the end of a 16-column line
+        column = 15;
+    }
+
+    // Calculate DDRAM address based on row
+    // For 2-line displays: Row 0 starts at 0x00, Row 1 at 0x40
+
+    switch (row) {
+        case 0:
+            address = column;
+            break;
+        case 1:
+            address = column + 0x40;
+            break;
+       // Add cases for 4-line displays if needed (e.g., row 2 at 0x10/0x14, row 3 at 0x50/0x54)
+        default:
+          
+            address = column;// Default to row 0 if row is invalid
+
+            break;
+    }
+
+    // Send the command to set the DDRAM address.
+    LCD_command(set_cursor | address);
+}

@@ -4,12 +4,17 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs2011/ccs/tools/compiler
+CG_TOOL_ROOT := C:/ti/Compilers
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./GPIO.obj" \
+"./GPS_program.obj" \
+"./LCD.obj" \
+"./Systick_Timer.obj" \
+"./UART.obj" \
 "./main.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "../tm4c123gh6pm.cmd" \
@@ -135,15 +140,15 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 main_project.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"C:/ti/ccs2011/ccs/tools/compiler/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"main_project.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs2011/ccs/tools/compiler/lib" -i"C:/ti/ccs2011/ccs/tools/compiler/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="main_project_linkInfo.xml" --rom_model -o "main_project.out" $(ORDERED_OBJS)
+	"C:/ti/Compilers/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"main_project.map" --heap_size=0 --stack_size=512 -i"C:/ti/Compilers/lib" -i"C:/ti/Compilers/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="main_project_linkInfo.xml" --rom_model -o "main_project.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "tm4c123gh6pm_startup_ccs.obj" 
-	-$(RM) "main.d" "tm4c123gh6pm_startup_ccs.d" 
+	-$(RM) "GPIO.obj" "GPS_program.obj" "LCD.obj" "Systick_Timer.obj" "UART.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" 
+	-$(RM) "GPIO.d" "GPS_program.d" "LCD.d" "Systick_Timer.d" "UART.d" "main.d" "tm4c123gh6pm_startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
