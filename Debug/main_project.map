@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Sun Apr 20 19:22:38 2025
+>> Linked Fri May  9 17:44:12 2025
 
 OUTPUT FILE NAME:   <main_project.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000026d
@@ -63,7 +63,7 @@ MODULE SUMMARY
     +--+------------------------------+------+---------+---------+
        Total:                         16     620       0      
                                                               
-    C:\ti\ccs2011\ccs\tools\compiler\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+    C:\ti\Compilers\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
        boot_cortex_m.c.obj            44     0         0      
        exit.c.obj                     4      0         0      
        pre_init.c.obj                 4      0         0      
