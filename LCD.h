@@ -1,5 +1,7 @@
 #include "tm4c123gh6pm.h"
 #include "std_types.h"
+#include "Systick_Timer.h"
+#include "GPIO.h"
 
 #ifndef LCD_H_
 #define LCD_H_

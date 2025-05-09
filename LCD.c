@@ -7,9 +7,8 @@
 *************/
 void LCD_init(){
 
-    // Enable ports B and E
-    SYSCTL_RCGCGPIO_R |= SYSCTL_RCGC2_GPIOB | SYSCTL_RCGC2_GPIOE;
-    while ((SYSCTL_PRGPIO_R & SYSCTL_RCGCGPIO_R) == 0); //delay (wait) till SYSCTL is enabled
+    GPIO_PORT_Init(PB);
+    GPIO_PORT_Init(PE);
 
     // Control Pins (RS => PE1, RW => GND, E => PE3)
     GPIO_PORTE_DIR_R |= 0x0A;
@@ -33,7 +32,7 @@ void LCD_init(){
         LCD_command(four_bits_two_lines_mode);
     #endif
     LCD_command(cursor_off); // turn off cursor
-    LCD_command(clear_screen); // clear LCD screen on start
+    LCD_clearScreen(); // clear LCD screen on start
 }
 
 /*************
@@ -103,4 +102,3 @@ void LCD_displayString(const uint8 *data){
         index++;
     }
 }
-
