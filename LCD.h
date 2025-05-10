@@ -1,10 +1,10 @@
+#ifndef LCD_H_
+#define LCD_H_
+
 #include "tm4c123gh6pm.h"
 #include "std_types.h"
 #include "Systick_Timer.h"
 #include "GPIO.h"
-
-#ifndef LCD_H_
-#define LCD_H_
 
 #define     dataBitsMode                            8
 #define     eight_bits_two_lines_mode               0x38
@@ -19,11 +19,11 @@
 
 // RS => PE1, RW => GND, E => PE3, D0-D7 => PB0-PB7
 
-void LCD_init();
-void LCD_displayCharacter(uint8 data);
-void LCD_displayString(const uint8 *data);
-void LCD_clearScreen();
-void LCD_goToRowColumn(uint8 row, uint8 column);
-void LCD_command(uint8 cmd);
+extern void LCD_init();
+extern void LCD_displayCharacter(uint8 data);
+extern void LCD_displayString(const uint8 *data);
+extern void LCD_clearScreen();
+extern void LCD_goToRowColumn(uint8 row, uint8 column);
+extern void LCD_command(uint8 cmd);
 
 #endif

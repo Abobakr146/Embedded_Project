@@ -1,5 +1,6 @@
 "./GPIO.obj"
 "./GPS_program.obj"
+"./HELPER.obj"
 "./LCD.obj"
 "./Systick_Timer.obj"
 "./UART.obj"

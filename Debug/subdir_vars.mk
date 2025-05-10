@@ -11,6 +11,7 @@ CMD_SRCS += \
 C_SRCS += \
 ../GPIO.c \
 ../GPS_program.c \
+../HELPER.c \
 ../LCD.c \
 ../Systick_Timer.c \
 ../UART.c \
@@ -20,6 +21,7 @@ C_SRCS += \
 C_DEPS += \
 ./GPIO.d \
 ./GPS_program.d \
+./HELPER.d \
 ./LCD.d \
 ./Systick_Timer.d \
 ./UART.d \
@@ -29,6 +31,7 @@ C_DEPS += \
 OBJS += \
 ./GPIO.obj \
 ./GPS_program.obj \
+./HELPER.obj \
 ./LCD.obj \
 ./Systick_Timer.obj \
 ./UART.obj \
@@ -38,6 +41,7 @@ OBJS += \
 OBJS__QUOTED += \
 "GPIO.obj" \
 "GPS_program.obj" \
+"HELPER.obj" \
 "LCD.obj" \
 "Systick_Timer.obj" \
 "UART.obj" \
@@ -47,6 +51,7 @@ OBJS__QUOTED += \
 C_DEPS__QUOTED += \
 "GPIO.d" \
 "GPS_program.d" \
+"HELPER.d" \
 "LCD.d" \
 "Systick_Timer.d" \
 "UART.d" \
@@ -56,6 +61,7 @@ C_DEPS__QUOTED += \
 C_SRCS__QUOTED += \
 "../GPIO.c" \
 "../GPS_program.c" \
+"../HELPER.c" \
 "../LCD.c" \
 "../Systick_Timer.c" \
 "../UART.c" \

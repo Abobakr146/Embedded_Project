@@ -4,7 +4,6 @@
 
 #include "UART.h" 
 #include "std_types.h"
-#include "GPS_private.h"
 #include "GPS_interface.h"
 
 /*
@@ -95,7 +94,7 @@ GPS_Status_t GPS_getCurrentLocation(float64* GPS_lat, float64* GPS_long) {
 
     // Try to find a valid GPRMC sentence
     uint8 Local_u8Attempts = 0;
-    while (Local_u8Attempts < 5) { // Try up to 5 NMEA sentences
+    while (Local_u8Attempts < 15) { // Try up to 5 NMEA sentences
         Local_Status = GPS_readNMEASentence(NMEA_buffer);
 
         if (Local_Status == GPS_VALID_DATA) {
@@ -107,7 +106,7 @@ GPS_Status_t GPS_getCurrentLocation(float64* GPS_lat, float64* GPS_long) {
         Local_u8Attempts++;
     }
 
-    if (Local_u8Attempts >= 5) {
+    if (Local_u8Attempts >= 15) {
         return GPS_NO_DATA;
     }
 /*****************************************************************************************************************/
@@ -207,7 +206,7 @@ float64 stof(uint8 *str) {
 }// Done
 
 
-uint8* customcustomStrtok_r(uint8* str, const uint8* delim, uint8** saveptr) {
+uint8* customStrtok_r(uint8* str, const uint8* delim, uint8** saveptr) {
     uint8* token;
 
     if (str == NULL_PTR) {

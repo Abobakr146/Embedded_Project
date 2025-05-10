@@ -2,7 +2,17 @@
 #define GPS_INTERFACE_H_
 
 #include "std_types.h"
-#include "GPS_private.h"
+
+
+
+//Constants
+#define PI 3.14159265358979323846
+#define EARTH_RADIUS_M 6371000
+
+//size of GPS Sentence
+#define MAX_SENTENCE_FEILDS 15
+#define SENTENCE_SIZE 100
+
 
 typedef enum {
     GPS_NO_DATA = 0,
