@@ -8,6 +8,7 @@
 #include "HELPER.h"
 
 void main(){
+    GPIO_Init();
     LCD_init();
     UART0_Init();
     UART5_Init();

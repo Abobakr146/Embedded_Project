@@ -32,8 +32,12 @@ float64 GPS_getDistance_angleInDegrees(float64 GPS_lat, float64 GPS_long, float6
     GPS_lat = GPS_degreesToRadians(GPS_lat);
     GPS_latSaved = GPS_degreesToRadians(GPS_latSaved);
 
-    float64 a = sin(GPS_diffLat / 2) * sin(GPS_diffLat / 2) +
-            cos(GPS_lat) * cos(GPS_latSaved) * sin(GPS_diffLong / 2) * sin(GPS_diffLong / 2);
+    float64 temp1 = sin(GPS_diffLat / 2);
+    float64 temp2 = cos(GPS_lat);
+    float64 temp3 = cos(GPS_latSaved);
+    float64 temp4 = sin(GPS_diffLong / 2);
+
+    float64 a = (temp1 * temp1) + (temp2 * temp3 * temp4 * temp4);
 
     float64 c = 2 * atan2(sqrt(a), sqrt(1 - a)); // atan(y/x) --- atan2(y, x) both are tan inverse in difference format
 

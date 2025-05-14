@@ -89,7 +89,7 @@ void GPIO_PORTF_Init(void){
     GPIO_PORTF_CR_R |= 0x1F; //Modified
     GPIO_PORTF_DIR_R |= 0x0E; // Modified
     GPIO_PORTF_DEN_R |= 0xFF;  //Modified
-    GPIO_PORTF_PUR_R |= 0x10; //Modified
+    GPIO_PORTF_PUR_R |= 0x11; //Modified
     GPIO_PORTF_AMSEL_R &= ~0x1F; //Modified
     GPIO_PORTF_AFSEL_R &= ~0x1F; //Modified
     GPIO_PORTF_PCTL_R &= 0x00000000; //Modified
@@ -112,7 +112,7 @@ void BUZZ_Off(void){
 }
 
 boolean Button_Pressed(uint8 var){
-    if(!var)  
+    if(var != 0)  
         return (GPIO_PORTF_DATA_R & 0x10) == 0;
     else 
         return (GPIO_PORTF_DATA_R & 0x01) == 0;
