@@ -21,13 +21,19 @@ typedef enum {
 } GPS_Status_t;
 
 extern float64 GPS_ConvertToDecimalDegrees(float64 coordinatesInGPSformat);
+
 extern float64 GPS_degreesToRadians(float64 degree);
+
 extern float64 GPS_getDistance_angleInDegrees(float64 GPS_lat, float64 GPS_long, float64 GPS_latSaved, float64 GPS_lonSaved);
 
 extern GPS_Status_t GPS_readNMEASentence(uint8* NMEA_buffer);
+
 extern GPS_Status_t GPS_getCurrentLocation(float64* GPS_lat, float64* GPS_long);
+
 extern GPS_Status_t GPS_getCurrentLocationWithTimeout(float64* GPS_lat, float64* GPS_long, uint16 timeout);
+
 extern uint8 GPS_isWithinRadius(float64 currLatitude, float64 currLongitude, float64 targetLatitude, float64 targetLongitude, float64 targetRadius);
+
 extern float64 stof(uint8 *str);
 
 

@@ -1,42 +1,42 @@
 [
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/main.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/GPIO.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/tm4c123gh6pm_startup_ccs.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/LCD.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/LCD.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/Systick_Timer.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/GPIO.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/main.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/GPS_program.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/tm4c123gh6pm_startup_ccs.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Systick_Timer.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/GPS_program.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/UART.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/UART.c"
    },
    {
-      "directory" : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/Debug",
-      "command"   : "clang++ -I\"C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project\" -I\"C:/ti/ccs2011/ccs/tools/compiler/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
-      "file"      : "C:/Users/aboba/Desktop/Personal/F/ASU/S1-2/embedded/Project/Embedded_Project/HELPER.c"
+      "directory" : "D:/College/Current Courses/Embedded/Embedded_Project/Debug",
+      "command"   : "clang++ -I\"D:/College/Current Courses/Embedded/Embedded_Project\" -I\"C:/ti/Compilers/include\" -Dccs=\"ccs\" -DPART_TM4C123GH6PM -xc",
+      "file"      : "D:/College/Current Courses/Embedded/Embedded_Project/HELPER.c"
    }
 ]
