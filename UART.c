@@ -48,8 +48,7 @@ uint8 UART0_ReceiveByte(void){
 void UART0_SendString(const uint8 *pData){
     uint32 uCounter =0;
 	
-    while(pData[uCounter] != '\0')
-{
+    while(pData[uCounter] != '\0'){
         UART0_SendByte(pData[uCounter]); 
         uCounter++; 
     }
