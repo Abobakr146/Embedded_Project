@@ -57,41 +57,51 @@ void main(){
 
         if(isHallAB(GPS_lat, GPS_long)){
             LCD_displayString("Halls A,B");
+            BUZZ_On();
         }
 
         else if(isHallCD(GPS_lat, GPS_long)){
             LCD_displayString("Halls C,D");
+            BUZZ_On();
         }
 
         else if(isCredit(GPS_lat, GPS_long)){
             LCD_displayString("Credit Building");
+            BUZZ_On();
         }
 
         else if(isMain(GPS_lat, GPS_long)){
             LCD_displayString("Main Building");
+            BUZZ_On();
         }
 
         else if(isConcrete(GPS_lat, GPS_long)){
             LCD_displayString("Concrete Building");
+            BUZZ_On();
         }
 
         else if(isPlaygrounds(GPS_lat, GPS_long)){
             LCD_displayString("Playgrounds");
+            BUZZ_On();
         }
 
         else if(isMosque(GPS_lat, GPS_long)){
             LCD_displayString("Mosque");
+            BUZZ_On();
         }
 
         else if(isLibrary(GPS_lat, GPS_long)){
             LCD_displayString("Library");
+            BUZZ_On();
         }
 
         else if(isFountain(GPS_lat, GPS_long)){
             LCD_displayString("Fountain");
+            BUZZ_On();
         }
         else{
             LCD_displayString("None");
+            BUZZ_Off();
         }
 
     }
