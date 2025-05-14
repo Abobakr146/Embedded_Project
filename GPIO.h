@@ -12,9 +12,12 @@ extern void GPIO_Init(void);
 extern void GPIO_PORT_Init(PORT port);
 extern void GPS_GPIO_Init(void);
 extern void Button_GPIO_Init(void);
-extern void LED_GPIO_Init(void);
+extern void GPIO_PORTF_Init(void);
 extern void LED_On(void);
 extern void LED_Off(void);
-extern boolean Button_Pressed(void);
+
+extern void BUZZ_On(void);
+extern void BUZZ_Off(void);
+extern boolean Button_Pressed(uint8 var);
 
 #endif

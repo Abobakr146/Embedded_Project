@@ -28,7 +28,7 @@ typedef enum {
 
 extern void intToStr(uint32 num, uint8* str, uint8* index);
 extern void floatToStr(float64 num, uint8* str, uint8 precision);
-extern destinationStatus_t ledBlinkerAndDestinationDisplayer(uint8 chosenDest, float64 GPS_currlat, float64 GPS_currlong);
+extern void ledBlinkerAndDestinationDisplayer(uint8 chosenDest, float64 GPS_currlat, float64 GPS_currlong);
 extern range_t rangeDecider(uint8 chosenDest, float64 GPS_currlat, float64 GPS_currlong);
 
 

@@ -19,7 +19,7 @@ void main(){
     while(1) {
 
 
-        if(Button_Pressed()){
+        if(Button_Pressed(0)){  //Choose switch with argument (1/0)
             delay_ms(125);
             destinationArrayIndex++;
             destinationArrayIndex %= sizeof(destinations) / sizeof(destinations[0]);
@@ -48,7 +48,7 @@ void main(){
         LCD_clearScreen();
         LCD_goToRowColumn(0, 0);
         LCD_displayString("Dest:");
-        destinationStatus_t destinationStatus = ledBlinkerAndDestinationDisplayer(destinations[destinationArrayIndex], GPS_lat, GPS_long);
+        ledBlinkerAndDestinationDisplayer(destinations[destinationArrayIndex], GPS_lat, GPS_long);
         LCD_goToRowColumn(1, 0);
 
 

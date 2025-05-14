@@ -57,7 +57,7 @@ void floatToStr(float64 num, uint8* str, uint8 precision) {
 }
 
 
-destinationStatus_t ledBlinkerAndDestinationDisplayer(uint8 chosenDest, float64 GPS_currlat, float64 GPS_currlong){
+void ledBlinkerAndDestinationDisplayer(uint8 chosenDest, float64 GPS_currlat, float64 GPS_currlong){
 
     if(chosenDest == 'A'){
         LCD_displayString("Hall A,B");
@@ -95,7 +95,7 @@ destinationStatus_t ledBlinkerAndDestinationDisplayer(uint8 chosenDest, float64 
     }
     else { 
         LED_Off(); 
-        return noDestination; 
+        return; 
     }
 
 
@@ -117,7 +117,7 @@ destinationStatus_t ledBlinkerAndDestinationDisplayer(uint8 chosenDest, float64 
     else if(range == veryClose) {
         LED_On();
     }
-    return destinationExists;
+    return;
 }
 
 
