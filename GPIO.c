@@ -5,8 +5,9 @@ void GPIO_Init(void){
     GPIO_PORT_Init(PE);
     GPIO_PORT_Init(PF);
     GPS_GPIO_Init();
-    Button_GPIO_Init();
-    LED_GPIO_Init();
+    //Button_GPIO_Init();
+    //LED_GPIO_Init();
+    GPIO_PORTF_Init(); //modified
 }
 
 void GPIO_PORT_Init(PORT port){
@@ -104,4 +105,31 @@ void LED_Off(void){
 
 boolean Button_Pressed(void){
     return (GPIO_PORTF_DATA_R & 0x10) == 0;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+void GPIO_PORTF_Init(void){
+    GPIO_PORTF_LOCK_R = 0x4C4F434B;
+    GPIO_PORTF_CR_R |= 0x1F; //Modified
+    GPIO_PORTF_DIR_R |= 0x0E; // Modified
+    GPIO_PORTF_DEN_R |= 0xFF;  //Modified
+    GPIO_PORTF_PUR_R |= 0x1F; //Modified
+    GPIO_PORTF_AMSEL_R &= ~0x1F; //Modified
+    GPIO_PORTF_AFSEL_R &= ~0x1F; //Modified
+    GPIO_PORTF_PCTL_R &= 0x00000000; //Modified
+}
+
+void BUZZ_On(void){
+    GPIO_PORTF_DATA_R |= 0x04;
+}
+
+void BUZZ_Off(void){
+    GPIO_PORTF_DATA_R &= ~0x04;
+}
+
+boolean Button_Pressed_case(uint8 var){
+    if(var != 0)  
+        return (GPIO_PORTF_DATA_R & 0x10) == 0;
+    else 
+        return (GPIO_PORTF_DATA_R & 0x01) == 0;
 }
